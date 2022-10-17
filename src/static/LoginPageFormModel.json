@@ -1,0 +1,20 @@
+[
+  {
+    "type": "text",
+    "name": "userName",
+    "label": "User name",
+    "placeholder": "user name",
+    "register": {
+      "required": "Username is required"
+    }
+  },
+  {
+    "type": "password",
+    "name": "password",
+    "label": "Password",
+    "placeholder": "password",
+    "register": {
+      "required": "Password is required"
+    }
+  }
+]
