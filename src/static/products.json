@@ -1,0 +1,13 @@
+[
+  { "id": 1, "title": "HAIR DYE", "image": "./images/hair.png" },
+  { "id": 2, "title": "HAND CREAM", "image": "./images/nails.png" },
+  { "id": 3, "title": "FACE CREAM", "image": "./images/barber.png" },
+  { "id": 4, "title": "PRODUCT", "image": "./images/nails.png" },
+  { "id": 5, "title": "PRODUCT", "image": "./images/barber.png" },
+  { "id": 6, "title": "PRODUCT", "image": "./images/nails.png" },
+  { "id": 7, "title": "PRODUCT", "image": "./images/nails.png" },
+  { "id": 8, "title": "PRODUCT", "image": "./images/barber.png" },
+  { "id": 9, "title": "PRODUCT", "image": "./images/barber.png" },
+  { "id": 10, "title": "PRODUCT", "image": "./images/nails.png" },
+  { "id": 11, "title": "PRODUCT", "image": "./images/barber.png" }
+]

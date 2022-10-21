@@ -21,7 +21,7 @@ const NavBar = () => {
       <div className="navbar--account">
         <img src="./images/Avatar.png" alt="account" className="navbar--account-logo" />
         <p className="navbar--account-name">Salon Registration</p>
-        <img src="./images/navbarArrow.png" alt="arrow" />
+        <img src="./images/navbarArrow.png" alt="arrow" className="navbar--arrow" />
       </div>
     </nav >
   );

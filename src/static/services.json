@@ -1,0 +1,13 @@
+[
+  { "id": 1, "title": "HAIR WOMAN", "image": "./images/hair.png" },
+  { "id": 2, "title": "NAILS", "image": "./images/nails.png" },
+  { "id": 3, "title": "BARBER", "image": "./images/barber.png" },
+  { "id": 4, "title": "NAILS", "image": "./images/nails.png" },
+  { "id": 5, "title": "BARBER", "image": "./images/barber.png" },
+  { "id": 6, "title": "NAILS", "image": "./images/nails.png" },
+  { "id": 7, "title": "NAILS", "image": "./images/nails.png" },
+  { "id": 8, "title": "BARBER", "image": "./images/barber.png" },
+  { "id": 9, "title": "BARBER", "image": "./images/barber.png" },
+  { "id": 10, "title": "NAILS", "image": "./images/nails.png" },
+  { "id": 11, "title": "BARBER", "image": "./images/barber.png" }
+]

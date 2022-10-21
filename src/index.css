@@ -75,10 +75,11 @@ nav {
 }
 
 .navbar--link {
-  padding: 20px 10px;
+  align-self: center;
+  padding: 15px 10px;
   font-size: 16px;
   color: rgba(0, 0, 0, 0.6);
-  transition: border .3s ; 
+  transition: border .1s ; 
   transition-timing-function: ease-out;
 }
 
@@ -110,3 +111,13 @@ nav {
   margin-left: 10px;
   align-self: center;
 }
+
+.navbar--arrow {
+  width: 12px;
+  height: 6px;
+  margin-left: 10px;
+  align-self: center;
+}
+
+/* Main page section */
+
