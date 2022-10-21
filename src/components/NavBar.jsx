@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 const NavBar = () => {
   return (
     <nav>
+      <img src="./images/navLogo.png" alt="logo" />
       <div className="navbar--title">
         <h1 className="navbar--title--h1">PowerBeauty</h1>
         <p className="navbar--title--p">Beauty is our duty</p>

@@ -7,6 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #EBE8EC;
 }
 
 code {
@@ -45,8 +46,10 @@ a {
 
 nav {
   display: flex;
-  padding: 20px 30px;
-  margin-left: 30px;
+  padding-inline: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
 }
 
 .navbar--title {
@@ -121,3 +124,11 @@ nav {
 
 /* Main page section */
 
+.main-page--section--first-row {
+  display: flex;
+}
+
+.main-section--first-row--arrow {
+  margin-left: auto;
+  align-self: center;
+}

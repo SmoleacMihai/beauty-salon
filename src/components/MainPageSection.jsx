@@ -4,13 +4,19 @@ import styles from "../index.css"
 const MainPageSection = (props) => {
   const [clickState, setClickState] = useState(false);
 
-	const arrowClickedBtnStyle = {
-		transform: "rotate(-180deg)",
-		transition: "transform 300ms ease"
+	const arrowClickedStyle = {
+    "background": "transparent",
+    "border": "none",
+    "font-size": "-",
+		"transform": "rotate(-180deg)",
+		"transition": "transform 300ms ease"
 	}
-	const arrowUnclickedBtnStyle = {
-		transform: "",
-		transition: "transform 300ms ease"
+	const arrowUnclickedStyle = {
+    "background": "transparent",
+    "border": "none",
+    "font-size": "-",
+		"transform": "",
+		"transition": "transform 300ms ease"
 	}
 	const handleArrowClick = () => {
 		setClickState(prevState => !prevState)
@@ -19,14 +25,14 @@ const MainPageSection = (props) => {
   const {items, title } = props;
 
   return (
-    <div className={styles.services}>
-      <div className={styles.header__items}>
+    <div className="main-page--section">
+      <div className="main-page--section--first-row">
         <h3>{title}</h3>
         <button
-          style={clickState ? arrowClickedBtnStyle : arrowUnclickedBtnStyle}
+          style={clickState ? arrowClickedStyle : arrowUnclickedStyle}
           onClick={handleArrowClick}
         >
-          <img src="./images/arrow-up.png" alt="logo" />
+          <img src="./images/navbarArrow.png" alt="logo" className="main-section--first-row--arrow"/>
         </button>
       </div>
       {clickState && (
