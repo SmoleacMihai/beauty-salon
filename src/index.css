@@ -124,11 +124,43 @@ nav {
 
 /* Main page section */
 
+.main-page--section {
+  padding: 25px;
+}
+
 .main-page--section--first-row {
   display: flex;
 }
 
-.main-section--first-row--arrow {
+.main-page--section--first-row--button {
   margin-left: auto;
   align-self: center;
+  cursor: pointer;
+}
+
+.main-page--section--second-row {
+  margin-top: 15px; 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  row-gap: 20px;
+  column-gap: 25px;
+  justify-items: center;
+}
+
+.main-page--section--second-row--figure {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.mp--s--sr--fig-img {
+  width: 120px;
+  height: 120px;
+}
+
+.mp--s--sr-fig-title {
+  text-decoration: underline;
+  font-size: 18px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.96);
 }

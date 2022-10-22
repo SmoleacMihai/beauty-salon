@@ -1,28 +1,27 @@
 import { useState } from "react";
-import styles from "../index.css"
 
 const MainPageSection = (props) => {
-  const [clickState, setClickState] = useState(false);
+  const [clickState, setClickState] = useState(true);
 
-	const arrowClickedStyle = {
+  const arrowClickedStyle = {
     "background": "transparent",
     "border": "none",
     "font-size": "-",
-		"transform": "rotate(-180deg)",
-		"transition": "transform 300ms ease"
-	}
-	const arrowUnclickedStyle = {
+    "transform": "rotate(-180deg)",
+    "transition": "transform 300ms ease"
+  }
+  const arrowUnclickedStyle = {
     "background": "transparent",
     "border": "none",
     "font-size": "-",
-		"transform": "",
-		"transition": "transform 300ms ease"
-	}
-	const handleArrowClick = () => {
-		setClickState(prevState => !prevState)
-	}
+    "transform": "",
+    "transition": "transform 300ms ease"
+  }
+  const handleArrowClick = () => {
+    setClickState(prevState => !prevState)
+  }
 
-  const {items, title } = props;
+  const { items, title } = props;
 
   return (
     <div className="main-page--section">
@@ -31,16 +30,17 @@ const MainPageSection = (props) => {
         <button
           style={clickState ? arrowClickedStyle : arrowUnclickedStyle}
           onClick={handleArrowClick}
+          className="main-page--section--first-row--button"
         >
-          <img src="./images/navbarArrow.png" alt="logo" className="main-section--first-row--arrow"/>
+          <img src="./images/navbarArrow.png" alt="logo" />
         </button>
       </div>
       {clickState && (
-        <div className={styles.items}>
+        <div className={"main-page--section--second-row"}>
           {items.map((item) => (
-            <div className={styles.item} key={item.id}>
-              <img src={item.image} alt="logo" />
-              <p>{item.title}</p>
+            <div className={"main-page--section--second-row--figure"} key={item.id}>
+              <img src={item.image} alt="logo" className="mp--s--sr--fig-img" />
+              <p className="mp--s--sr-fig-title">{item.title}</p>
             </div>
           ))}
         </div>
