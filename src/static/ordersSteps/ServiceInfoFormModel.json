@@ -1,0 +1,28 @@
+[
+  {
+    "type": "select",
+    "name": "gender",
+    "label": "Select category",
+    "options": [
+      {
+        "value": "",
+        "text": "Select..."
+      },
+      {
+        "value": 1,
+        "text": "Nail"
+      },
+      {
+        "value": 2,
+        "text": "Hair"
+      },
+      {
+        "value": 3,
+        "text": "Other"
+      }
+    ],
+    "register": {
+      "required": "Please, choose service category"
+    }
+  }
+]

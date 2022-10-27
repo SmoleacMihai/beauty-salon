@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -14,7 +15,7 @@ const NavBar = () => {
           className={"navbar--link"}
         >Help</NavLink>
         <NavLink
-          to="/main/help"
+          to="/main/order"
           className={"navbar--link"}
         >Orders</NavLink>
       </div>
