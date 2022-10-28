@@ -1,6 +1,6 @@
 import { useForm } from 'react-hook-form';
-import formModel from '../../static/formModel.json';
-import FormInputs from '../formInputs/FormInputs';
+import ServiceInfoFormModel from '../../static/ordersSteps/ServiceInfoFormModel.json';
+import FormInputs from './formInputs/FormInputs';
 
 const Form = () => {
   const {
@@ -22,12 +22,12 @@ const Form = () => {
       <form
         onSubmit={handleSubmit(onSubmit)}
       >
-        {formModel.map(element => (
+        {ServiceInfoFormModel.map(element => (
           <FormInputs
             key={element.name}
             element={element}
             register={register}
-            errors={errors} t
+            errors={errors}
           />
         ))}
         <input

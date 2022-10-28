@@ -1,7 +1,7 @@
 [
   {
     "type": "select",
-    "name": "gender",
+    "name": "select-category",
     "label": "Select category",
     "options": [
       {
@@ -19,6 +19,36 @@
       {
         "value": 3,
         "text": "Other"
+      }
+    ],
+    "register": {
+      "required": "Please, choose service category"
+    }
+  },
+  {
+    "type": "select",
+    "name": "select-service",
+    "label": "Select service",
+    "options": [
+      {
+        "value": "",
+        "text": "Select..."
+      },
+      {
+        "value": 1,
+        "text": "Pedicure"
+      },
+      {
+        "value": 2,
+        "text": "Haircut"
+      },
+      {
+        "value": 3,
+        "text": "Hair paint"
+      },
+      {
+        "value": 3,
+        "text": "Manicure"
       }
     ],
     "register": {
