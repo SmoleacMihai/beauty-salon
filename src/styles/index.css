@@ -200,3 +200,11 @@ nav {
   flex-direction: column;
   margin-inline: 20%
 }
+
+.row {
+  display: flex;
+}
+
+.ml-auto {
+  margin-left: auto ;
+}

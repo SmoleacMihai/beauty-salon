@@ -4,7 +4,6 @@ import masters from "../static/masters.json"
 import products from "../static/products.json"
 import MainPageSection from "../components/MainPageSection"
 import LoginPage from "./login";
-import {useEffect} from "react";
 
 const MainPage = ({user}) => {
 
