@@ -1,5 +1,5 @@
 import {useContext} from "react";
-import {FormData} from "../../FormData";
+import {FormData} from "../../context/FormData";
 
 const ServiceInfoForm = () => {
     const {formData, setFormData} = useContext(FormData);

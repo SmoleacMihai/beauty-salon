@@ -6,7 +6,6 @@ const LoginPage = ({handleAuth}) => {
     username: "",
     password: ""
   });
-
   const navigate = useNavigate();
 
   const handleLogIn = () => {
@@ -29,8 +28,6 @@ const LoginPage = ({handleAuth}) => {
       }
     });
   }
-
-
 
   return (
     <>

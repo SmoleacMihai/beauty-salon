@@ -1,10 +1,10 @@
 import { useNavigate } from "react-router-dom";
 
 const PublicPage = () => {
-  const goTo = useNavigate();
+  const navigate = useNavigate();
 
   const handleClick = () => {
-    goTo("/login");
+    navigate("/login");
   }
 
   return (

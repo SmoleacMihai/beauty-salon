@@ -1,19 +1,19 @@
 import NavBar from "../components/NavBar";
-import { useMultistepForm } from "../utils/hooks/useMultistepForm.tsx";
+import { useMultistepForm } from "../hooks/useMultistepForm.tsx";
 import ServiceInfoForm from "../components/orderPageForms/ServiceInfoForm.jsx";
 import LoginPage from "./login";
 import ClientInformationForm from "../components/orderPageForms/ClientInformation";
 import FinishOrder from "../components/orderPageForms/FinishOrder";
 import {useContext} from "react";
-import {OrderList} from "../orderList";
-import {FormData} from "../FormData";
+import {OrderList} from "../context/orderList";
+import {FormData} from "../context/FormData";
 import {useNavigate} from "react-router-dom";
 
 const OrderPage = ({user}) => {
   const stepsTitles = ["Select Service", "Client information", "Finish order"];
   const {formData, setFormData} = useContext(FormData);
   const {orderList, setOrderList} = useContext(OrderList);
-  const goTo = useNavigate();
+  const navigate = useNavigate();
   const {
     steps,
     currentStepIndex,
@@ -42,7 +42,7 @@ const OrderPage = ({user}) => {
 
     setFormData({});
 
-    goTo("/main");
+    navigate("/main");
 
   }
 

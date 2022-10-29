@@ -8,7 +8,6 @@ import LoginPage from "./login";
 const MainPage = ({user}) => {
 
 	if (!user) {
-		console.log("this sucks");
 		return <LoginPage/>
 	}
 
