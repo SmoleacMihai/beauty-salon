@@ -84,6 +84,7 @@ nav {
   color: rgba(0, 0, 0, 0.6);
   transition: border .1s ; 
   transition-timing-function: ease-out;
+  cursor: pointer;
 }
 
 .navbar--link:hover {
@@ -163,4 +164,39 @@ nav {
   font-size: 18px;
   text-align: center;
   color: rgba(0, 0, 0, 0.96);
+}
+
+.order-pg--content {
+  padding: 30px;
+}
+
+.order-pg--content--title {
+  display: flex;
+  align-items: center;
+}
+
+.order-pg--content--title--register {
+  font-family: 'Abel', sans-serif;
+  font-size: 48px;
+  line-height: 61px;
+  letter-spacing: -0.05em;
+  color: #5255C8;
+}
+
+.order-pg--content--title--cur-step{
+  padding: 8px 12px;
+  background: #EEFD77;
+  border-radius: 12px;
+  font-family: 'Abel', sans-serif;
+  font-size: 24px;
+  line-height: 26px;
+  letter-spacing: -0.03em;
+  color: rgba(0, 0, 0, 0.96);
+  margin-left: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-inline: 20%
 }

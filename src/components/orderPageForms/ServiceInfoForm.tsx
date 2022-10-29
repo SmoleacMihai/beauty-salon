@@ -13,23 +13,24 @@ const ServiceInfoForm = () => {
     reValidateMode: "onChange"
   });
 
-  const onSubmit = handleSubmit(data => {console.log(data)});
+  const onSubmit = handleSubmit(data => {
+    console.log(data);
+    reset();
+  });
   return (
     <>
       <form
-        onSubmit={onSubmit}
+          onSubmit={onSubmit}
+          className={"form"}
       >
         {ServiceInfoFormModel.map(element => (
-          <FormInputs
-            key={element.name}
-            element={element}
-            register={register}
-            errors={errors}
-          />
+            <FormInputs
+                key={element.name}
+                element={element}
+                register={register}
+                errors={errors}
+            />
         ))}
-        <input
-          type={'submit'}
-        />
       </form>
     </>
   )

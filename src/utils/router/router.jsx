@@ -4,7 +4,7 @@ import {
   Route,
   Link,
 } from "react-router-dom";
-import App from "../../App";
+import AppRouting from "../../AppRouting";
 import LoginPage from "../../pages/login";
 import MainPage from "../../pages/main";
 import PublicPage from "../../pages/public";
@@ -12,7 +12,7 @@ import PublicPage from "../../pages/public";
 createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <AppRouting />,
     children: [
       {
         path: "login",

@@ -2,11 +2,11 @@
   {
     "type": "select",
     "name": "select-category",
-    "label": "Select category",
+    "label": "Service category",
     "options": [
       {
         "value": "",
-        "text": "Select..."
+        "text": "Select from list"
       },
       {
         "value": 1,
@@ -28,11 +28,11 @@
   {
     "type": "select",
     "name": "select-service",
-    "label": "Select service",
+    "label": "Service",
     "options": [
       {
         "value": "",
-        "text": "Select..."
+        "text": "Select from list"
       },
       {
         "value": 1,
@@ -54,5 +54,39 @@
     "register": {
       "required": "Please, choose service category"
     }
+  },
+  {
+    "type": "select",
+    "name": "master",
+    "label": "Master",
+    "options": [
+      {
+        "value": "",
+        "text": "Select from list"
+      },
+      {
+        "value": 1,
+        "text": "Alexandru Macedon"
+      },
+      {
+        "value": 2,
+        "text": "Ion Creanga"
+      },
+      {
+        "value": 3,
+        "text": "Vasile Alecsandri"
+      },
+      {
+        "value": 3,
+        "text": "Ion Druta"
+      }
+    ],
+    "register": {
+      "required": "Please, choose Master"
+    }
+  },
+  {
+    "type": "date",
+    "name": "date"
   }
 ]

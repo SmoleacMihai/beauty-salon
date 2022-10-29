@@ -2,8 +2,10 @@ import NavBar from "../components/NavBar";
 import { useMultistepForm } from "../utils/hooks/useMultistepForm.tsx";
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ServiceInfoForm from "../components/orderPageForms/ServiceInfoForm.tsx";
+import LoginPage from "./login";
+import {useForm} from "react-hook-form";
 
-const OrderPage = () => {
+const OrderPage = ({user}) => {
   const {
     steps,
     currentStepIndex,
@@ -12,16 +14,37 @@ const OrderPage = () => {
     isLastStep,
     back,
     next
-  } = useMultistepForm([<ServiceInfoForm />]);
+  } = useMultistepForm([<ServiceInfoForm />, <div>hi guys</div>]);
+
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors }
+  } = useForm({
+    mode: "onSubmit",
+    reValidateMode: "onChange"
+  });
+
+  const onSubmit = handleSubmit(data => {
+    console.log(data)
+  })
+
+  if (!user) {
+    return <LoginPage/>
+  }
+
+  const stepsTitles = ["Select Service", "Client information", "Finish order"];
+
   return (
     <>
       <NavBar />
       <div className="order-pg--content">
         <div className="order-pg--content--title">
           <h1 className="order-pg--content--title--register">Register new order</h1>
-          <span className="order-pg--content--title--cur-step">Step {currentStepIndex + 1}/{steps.length}</span>
+          <span className="order-pg--content--title--cur-step">Step {currentStepIndex + 1}/{steps.length} - {stepsTitles[currentStepIndex]}</span>
         </div>
-        <form>
+
           {step}
           <div>
             {
@@ -34,7 +57,6 @@ const OrderPage = () => {
               {!isLastStep ? "Next" : "Finish"}
             </button>
           </div>
-        </form>
       </div>
     </>
   );

@@ -3,6 +3,7 @@ import FormInputNumber from "./FormInputNumber";
 import FormInputSelect from "./FormInputSelect";
 import FormInputCheckbox from "./FormInputCheckbox";
 import FormInputRadio from "./FormInputRadio";
+import FormInputDate from "./FormInputDate";
 
 const FormInputs = ({element, register, errors}) => {
   let InputElement;
@@ -16,6 +17,8 @@ const FormInputs = ({element, register, errors}) => {
     case "checkbox": InputElement = FormInputCheckbox
       break;
     case "radio": InputElement = FormInputRadio
+      break;
+    case "date": InputElement = FormInputDate
       break;
     default : InputElement = FormInputText ;
   }

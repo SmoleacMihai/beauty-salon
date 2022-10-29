@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const LoginPage = () => {
+const LoginPage = ({handleAuth}) => {
   const [formValue, setFormValue] = useState({
     username: "",
     password: ""
@@ -13,9 +13,8 @@ const LoginPage = () => {
     const { username, password } = formValue;
 
     if (username === "root@domain.com" && password === "12345678") {
-      localStorage.setItem("isAuth", true);
+      localStorage.setItem("isAuth", String(true));
       navigate("/main");
-
     }
   }
 
@@ -30,6 +29,8 @@ const LoginPage = () => {
       }
     });
   }
+
+
 
   return (
     <>
