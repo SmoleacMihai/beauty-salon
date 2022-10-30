@@ -3,6 +3,7 @@ import {useNavigate} from "react-router-dom";
 
 const NavBar = () => {
     const goTo = useNavigate();
+
   return (
     <nav>
       <img src="./images/navLogo.png" alt="logo" />

@@ -2,21 +2,6 @@ import { useState } from "react";
 
 const MainPageSection = (props) => {
   const [clickState, setClickState] = useState(true);
-
-  const arrowClickedStyle = {
-    "background": "transparent",
-    "border": "none",
-    "font-size": "-",
-    "transform": "rotate(-180deg)",
-    "transition": "transform 300ms ease"
-  }
-  const arrowUnclickedStyle = {
-    "background": "transparent",
-    "border": "none",
-    "font-size": "-",
-    "transform": "",
-    "transition": "transform 300ms ease"
-  }
   const handleArrowClick = () => {
     setClickState(prevState => !prevState)
   }
@@ -28,9 +13,12 @@ const MainPageSection = (props) => {
       <div className="main-page--section--first-row">
         <h3>{title}</h3>
         <button
-          style={clickState ? arrowClickedStyle : arrowUnclickedStyle}
           onClick={handleArrowClick}
-          className="main-page--section--first-row--button"
+          className={
+            clickState ?
+                "main-page--section--first-row--button arrowClicked" :
+                "main-page--section--first-row--button arrowUnclicked"
+          }
         >
           <img src="./images/navbarArrow.png" alt="logo" />
         </button>

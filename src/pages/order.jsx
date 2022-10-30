@@ -1,4 +1,3 @@
-import NavBar from "../components/NavBar";
 import { useMultistepForm } from "../hooks/useMultistepForm.tsx";
 import ServiceInfoForm from "../components/orderPageForms/ServiceInfoForm.jsx";
 import LoginPage from "./login";
@@ -8,6 +7,7 @@ import {useContext} from "react";
 import {OrderList} from "../context/orderList";
 import {FormData} from "../context/FormData";
 import {useNavigate} from "react-router-dom";
+import NavBarLayout from "../layouts/NavBarLayout";
 
 const OrderPage = ({user}) => {
   const stepsTitles = ["Select Service", "Client information", "Finish order"];
@@ -47,8 +47,7 @@ const OrderPage = ({user}) => {
   }
 
   return (
-    <>
-      <NavBar />
+    <NavBarLayout>
       <div className="order-pg--content">
         <div className="order-pg--content--title">
           <h1 className="order-pg--content--title--register">Register new order</h1>
@@ -69,7 +68,7 @@ const OrderPage = ({user}) => {
           </div>
         </form>
       </div>
-    </>
+    </NavBarLayout>
   );
 }
 

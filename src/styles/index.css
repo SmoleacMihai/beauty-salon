@@ -125,6 +125,20 @@ nav {
 
 /* Main page section */
 
+.arrowClicked {
+  background: transparent;
+  border: none;
+  transform: rotate(-180deg);
+  transition: transform 300ms ease;
+}
+
+.arrowUnclicked {
+  background: transparent;
+  border: none;
+  transform: none;
+  transition: transform 300ms ease;
+}
+
 .main-page--section {
   padding: 25px;
 }
