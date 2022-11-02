@@ -158,7 +158,7 @@ nav {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   row-gap: 20px;
-  column-gap: 25px;
+  column-gap: 15px;
   justify-items: center;
 }
 
@@ -259,4 +259,9 @@ nav {
   line-height: 20px;
   text-align: left;
   color: rgba(0, 0, 0, 0.6);
+}
+
+.commentary {
+  padding-bottom: 40px;
+  resize: none;
 }

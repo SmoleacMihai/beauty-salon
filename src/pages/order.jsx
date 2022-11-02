@@ -41,6 +41,7 @@ const OrderPage = ({ user }) => {
     });
 
     setFormData({});
+    console.log(orderList);
 
     navigate("/main");
 
